@@ -3,7 +3,7 @@
 int main()
 {
  int accountNumber;
- double totalBalance;
+ double totalBalance; 
  char name[30];
 
 // Input account details
