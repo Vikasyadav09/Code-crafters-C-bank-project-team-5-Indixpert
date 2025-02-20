@@ -1,9 +1,9 @@
 #include<stdio.h>
 
-void createaccount();
+// void createaccount();
 void withdraw();
 long long int accnum;
-long int balance;
+long int balance=1000;
 
 int Menu()
 {
@@ -19,10 +19,11 @@ int a;
 printf("Enter Task number to Run :");
 scanf("%d",&a);
 
-if(a==1)
+if(a==3)
 {
-    createaccount();
+    withdraw();
 }
+
 else 
 {
     printf("Exit");
@@ -30,48 +31,48 @@ else
 
 }
 
-void createaccount()
-{
+// void createaccount()
+// {
     
-    char name[30];
+//     char name[30];
     
 
     
     
-    printf("\nEnter Account Number :");
-    scanf("%lld",&accnum);
-    if(accnum>10000000000 && accnum<99999999999)
-    {
+//     printf("\nEnter Account Number :");
+//     scanf("%lld",&accnum);
+//     if(accnum>10000000000 && accnum<99999999999)
+//     {
 
-    }
-    else
-    {
-        printf("Enter correct account number :");
-        scanf("%lld",&accnum);
+//     }
+//     else
+//     {
+//         printf("Enter correct account number :");
+//         scanf("%lld",&accnum);
         
-    }
+//     }
    
-    printf("\nEnter Account Holder Name :");
-    scanf("%s",&name);
+//     printf("\nEnter Account Holder Name :");
+//     scanf("%s",&name);
 
-    printf("\nEnter Opening Balance Amount (500 or more) :");
-    scanf("%ld",&balance);
-    if (balance>=500)
-    {
+//     printf("\nEnter Opening Balance Amount (500 or more) :");
+//     scanf("%ld",&balance);
+//     if (balance>=500)
+//     {
         
-    }
-    else
-    {
-        printf("Enter Opening Balance amount (500 or more) :");
-        scanf("%ld",&balance);
-    }
+//     }
+//     else
+//     {
+//         printf("Enter Opening Balance amount (500 or more) :");
+//         scanf("%ld",&balance);
+//     }
     
 
 
-    printf("\nAccount Number : %lld",accnum);
-    printf("\nAccount Holder Name : %s",name);
-    printf("\nTotal Balance : %ld",balance);
-}
+//     printf("\nAccount Number : %lld",accnum);
+//     printf("\nAccount Holder Name : %s",name);
+//     printf("\nTotal Balance : %ld",balance);
+// }
 
 void withdraw()
 {
