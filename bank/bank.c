@@ -15,7 +15,7 @@ int main()
 
  printf("Enter Total Balance: ");
  scanf("%lf", &totalBalance);
-
+ 
  
  // Display account details
  printf("\nAccount Details:\n");
